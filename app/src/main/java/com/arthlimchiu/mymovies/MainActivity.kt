@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         popularMoviesLayoutMgr = LinearLayoutManager(
             this,
             LinearLayoutManager.HORIZONTAL,
-            true
+            false
         )
         popularMovies.layoutManager = popularMoviesLayoutMgr
         popularMoviesAdapter = MoviesAdapter(mutableListOf()) { movie -> showMovieDetails(movie) }
